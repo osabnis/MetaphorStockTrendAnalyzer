@@ -1,7 +1,10 @@
 # MetaphorStockTrendAnalyzer
 A FastAPI-based API combining Metaphor's API and OpenAI's GPT-3.5 to extract and analyze headlines for predicting stock trends and recommending stocks!
 ### Overview:
-This comprehensive API integrates Metaphor's powerful search capabilities with OpenAI's gpt-3.5-turbo language model to offer a suite of invaluable features for stock market enthusiasts and investors. The API begins by skillfully modifying user queries into precise prompts, ensuring optimal results from Metaphor's API. It leverages Metaphor's search and content retrieval endpoints to extract and process relevant financial news articles about user-specified companies. These articles, along with expertly engineered prompts, are then presented to OpenAI's gpt-3.5-turbo, which generates insightful stock trend analyses and stock recommendations. Users can access these analyses, along with article summaries and URLs, to make informed investment decisions. The API also facilitates article retrieval and offers comparisons between companies, helping users gauge which stocks to invest in. Additionally, it provides top stock recommendations based on financial news and public sentiment, enhancing users' ability to navigate the dynamic world of stock markets. With its array of endpoints and powerful AI integration, this API empowers users with valuable insights for their investment strategies.
+This comprehensive API integrates Metaphor's powerful search capabilities with OpenAI's gpt-3.5-turbo language model to offer a suite of invaluable features for stock market enthusiasts and investors.  
+It leverages Metaphor's search and content retrieval endpoints to extract and process relevant financial news articles about user-specified companies. These articles, along with expertly engineered prompts, are then presented to OpenAI's gpt-3.5-turbo, which generates insightful stock trend analyses and stock recommendations. 
+Users can access these analyses, along with article summaries and URLs, to make informed investment decisions.  
+With its array of endpoints and powerful AI integration, this API empowers users with valuable insights for their investment strategies!
 ### Key Features:
 
 #### Block Diagram of the Project:
