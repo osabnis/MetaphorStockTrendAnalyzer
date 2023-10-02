@@ -5,7 +5,7 @@ This comprehensive API integrates Metaphor's powerful search capabilities with O
 ### Key Features:
 
 #### Block Diagram of the Project:
-![Alt text](https://github.com/osabnis/Semantic_Search_API/blob/main/graphs__and_statistics/block_diagram.drawio.png "Block Diagram")
+![Alt text](https://github.com/osabnis/MetaphorStockTrendAnalyzer/blob/main/diagrams/block_diagram.png?raw=true "Block Diagram")
 
 #### User Prompt Modification: 
 The API modifies the user's query into a specific prompt, which helps extract the best results from Metaphor's API!
@@ -26,11 +26,11 @@ The API uses OpenAI's gpt-3.5-turbo as the LLM to generate stock trend analysis 
 The API then processes the outputs from GPT-3, to extract the most relevant analysis and recommendations for the user!
 
 #### Analyses and Recommendations:
-The API returns the analysis and recommendations to the user - from which they can get a holistic understanding about the current news and public sentiment about the company and their stock!
+The API returns the analysis and recommendations to the user - from which they can get a holistic understanding of the current news and public sentiment about the company and their stock!
 
 ### Main Endpoints:
 This is how the Swagger page of the API looks like:  
-![Alt text](https://github.com/osabnis/Semantic_Search_API/blob/main/graphs__and_statistics/block_diagram.drawio.png "Block Diagram")
+![Alt text](https://github.com/osabnis/MetaphorStockTrendAnalyzer/blob/main/diagrams/fastapi_swagger.png?raw=true "Swagger Diagram")
 
 These are the main endpoints available:
 #### 1. /trend_analysis/analysis:
@@ -38,17 +38,17 @@ This endpoint is used to provide the user with a stock trend analysis about a co
 
 This endpoint takes three inputs:
 * company_name: This input takes the name of the company that the user wants to know more about.
-* start_date: This input takes the date from which they want the articles to be published from.
-* end_date: This input takes the date up to which they want the articles to published.
+* start_date: This input takes the date from which they want the articles to be published.
+* end_date: This input takes the date up to which they want the articles to be published.
 
 This endpoint returns:
 * A string output which has the following:
-  * The URLs, the titles and the unique IDs of the articles used by the API to come to its conclusion.
+  * The URLs, the titles, and the unique IDs of the articles used by the API to come to its conclusion.
   * The summary of news about the company.
   * The approximate trends about the stock prices based on the various possible scenarios.
 
 #### 2. /trend_analysis/read_article:
-This endpoint is used to provide the user the contents of the article which they are interested in reading.
+This endpoint is used to provide the user with the contents of the article that they are interested in reading.
 
 This endpoint takes a single input:
 * link_id: This input is the unique ID returned in the previous input which Metaphor uses to uniquely identify a document.
@@ -81,25 +81,25 @@ This endpoint is used to provide the user with a comparison between two differen
 This endpoint takes three inputs:
 * company_name_1: This input takes the name of the company that the user wants to know more about.
 * company_name_2: This input takes the name of the second company that the user wants to know more about.
-* start_date: This input takes the date from which they want the articles to be published from.
-* end_date: This input takes the date up to which they want the articles to published.
+* start_date: This input takes the date from which they want the articles to be published.
+* end_date: This input takes the date up to which they want the articles to be published.
 
 This endpoint returns:
 * A string output which has the following:
-  * The summaries of the news about both the companies.
-  * The expected the trends of the stock prices based on these summaries.
+  * The summaries of the news about both companies.
+  * The expected trends of the stock prices based on these summaries.
   * A recommendation on which stock to buy.
 
 
 #### 5. /trend_analysis/recommendations:
-This endpoint is used to provide the user recommendations on which stock to invest in based on the financial news articles and public sentiment!
+This endpoint is used to provide the user, recommendations on which stock to invest in based on the financial news articles and public sentiment!
 
 This endpoint takes a single input:
-* start_date: This input takes the date from which they want the articles to be published from.
+* start_date: This input takes the date from which they want the articles to be published.
 
 This endpoint returns:
 * A string output which has the following:
-  * The summaries of the articles it used to come up with the stock recommendations.
+  * The summaries of the articles used to come up with the stock recommendations.
   * The top 10 stocks it recommends.
 
 #### Conclusion:
@@ -108,5 +108,6 @@ In the fast-paced world of stock markets, staying informed and making well-infor
 ### How to run this?
 Make the following changes to be able to run this code for yourself!
 - Create an environment with the requirements file provided.
+- Add your Metaphor and OpenAI tokens in the app/logic/logic.py file.
 - Run the main.py file using this environment.
 - You should be good to go - with the API being visible at the http://localhost:8000/docs!
