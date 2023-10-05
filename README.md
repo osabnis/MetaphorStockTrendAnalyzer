@@ -114,3 +114,7 @@ Make the following changes to be able to run this code for yourself!
 - Add your Metaphor and OpenAI tokens in the app/logic/logic.py file.
 - Run the main.py file using this environment.
 - You should be good to go - with the API being visible at the http://localhost:8000/docs!
+
+### Report
+If you want to read the inspiration behind this project, the inner workings, and see sample outputs, you can view the report at:  
+Link: https://docs.google.com/document/d/19mJIyagHPoMT2I-we1d-u9WA1MO5_7roo5vyMmlptPs/edit?usp=sharing
